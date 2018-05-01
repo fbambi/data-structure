@@ -12,7 +12,6 @@
     "owner": "cpp",
     "fileLocation": [
       "relative",
-      "${workspaceRoot}"
     ],
     "pattern": {
       "regexp": "^(.*):(\\d+):(\\d+):\\s+(warning|error):\\s+(.*)$",
