@@ -10,7 +10,6 @@ void Vector<T>::copyFrom(T const *A, Rank lo, Rank hi)
   _size = 0;
   while (lo < hi)
   {
-    cout << A[lo] << endl;
     _elem[_size++] = A[lo++];
   }
 }
