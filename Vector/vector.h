@@ -13,6 +13,7 @@ private:
 protected:
   void copyFrom(T const *A, Rank lo, Rank hi); // 区间拷贝
   void expand();                               // 动态扩容
+  void shrink();                               // 缩容
   int remove(Rank lo, Rank hi);
 
 public:
@@ -34,6 +35,9 @@ public:
   T remove(Rank r);
   int deduplicate();
   void traverse(void (*)(T&));
+  int disordered()const;
+  int uniquify_slow();
+  int uniquify();
 };
 
 #include "vector_implementation.h"

@@ -5,17 +5,12 @@ using namespace std;
 
 int main()
 {
-  int A[10] = {1, 2, 2, 4, 5, 6, 7, 8, 8, 10};
+  int A[10] = {1, 2, 4, 4, 5, 6, 7, 8, 10, 10};
   Vector<int> v(A, 0, 10);
 
-  int diff = v.deduplicate();
+  int n = v.uniquify();
+  cout << n << endl;
 
-
-  v.list();
-
-
-
-  
   system("pause");
 
   return 0;
